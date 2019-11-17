@@ -1,0 +1,95 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      'e659795bd90e24016a583b6ba9bdb29b' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"tpl.ovenpars.item","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<p>\\r\\n    <strong>[[+name]]<\\/strong> -\\r\\n    <small>[[+description]]<\\/small>\\r\\n<\\/p>","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/ovenpars\\/elements\\/chunks\\/item.tpl","content":"<p>\\r\\n    <strong>[[+name]]<\\/strong> -\\r\\n    <small>[[+description]]<\\/small>\\r\\n<\\/p>","file":"item"}',
+        'guid' => '28cdd073e07dbd69605cb38d7e2c10af',
+        'native_key' => 0,
+        'signature' => 'e9683073d0499b7c64005ffeff245da8',
+      ),
+      '95565683af5279d450efce4e8caf61ea' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"tpl.ovenpars.office","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div id=\\"office-ovenpars-wrapper\\">\\r\\n    <div id=\\"office-preloader\\"><\\/div>\\r\\n<\\/div>","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/ovenpars\\/elements\\/chunks\\/office.tpl","content":"<div id=\\"office-ovenpars-wrapper\\">\\r\\n    <div id=\\"office-preloader\\"><\\/div>\\r\\n<\\/div>","file":"office"}',
+        'guid' => 'f53ff50743c3013fc19df9c9e6a75872',
+        'native_key' => 0,
+        'signature' => '047b7f09bff42202476dbe94ad818881',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'd307791f5819f37b1eabbfbcf0bfd274' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"ovenpars","description":"ovenpars snippet to list items","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/** @var modX $modx *\\/\\r\\n\\/** @var array $scriptProperties *\\/\\r\\n\\/** @var ovenpars $ovenpars *\\/\\r\\n$ovenpars = $modx->getService(\'ovenpars\', \'ovenpars\', MODX_CORE_PATH . \'components\\/ovenpars\\/model\\/\', $scriptProperties);\\r\\nif (!$ovenpars) {\\r\\n    return \'Could not load ovenpars class!\';\\r\\n}\\r\\n\\r\\n\\/\\/ Do your snippet code here. This demo grabs 5 items from our custom table.\\r\\n$tpl = $modx->getOption(\'tpl\', $scriptProperties, \'Item\');\\r\\n$sortby = $modx->getOption(\'sortby\', $scriptProperties, \'name\');\\r\\n$sortdir = $modx->getOption(\'sortbir\', $scriptProperties, \'ASC\');\\r\\n$limit = $modx->getOption(\'limit\', $scriptProperties, 5);\\r\\n$outputSeparator = $modx->getOption(\'outputSeparator\', $scriptProperties, \\"\\\\n\\");\\r\\n$toPlaceholder = $modx->getOption(\'toPlaceholder\', $scriptProperties, false);\\r\\n\\r\\n\\/\\/ Build query\\r\\n$c = $modx->newQuery(\'ovenparsItem\');\\r\\n$c->sortby($sortby, $sortdir);\\r\\n$c->where([\'active\' => 1]);\\r\\n$c->limit($limit);\\r\\n$items = $modx->getIterator(\'ovenparsItem\', $c);\\r\\n\\r\\n\\/\\/ Iterate through items\\r\\n$list = [];\\r\\n\\/** @var ovenparsItem $item *\\/\\r\\nforeach ($items as $item) {\\r\\n    $list[] = $modx->getChunk($tpl, $item->toArray());\\r\\n}\\r\\n\\r\\n\\/\\/ Output\\r\\n$output = implode($outputSeparator, $list);\\r\\nif (!empty($toPlaceholder)) {\\r\\n    \\/\\/ If using a placeholder, output nothing and set output to specified placeholder\\r\\n    $modx->setPlaceholder($toPlaceholder, $output);\\r\\n\\r\\n    return \'\';\\r\\n}\\r\\n\\/\\/ By default just return output\\r\\nreturn $output;","locked":0,"properties":"a:6:{s:3:\\"tpl\\";a:7:{s:4:\\"name\\";s:3:\\"tpl\\";s:4:\\"desc\\";s:17:\\"ovenpars_prop_tpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:17:\\"tpl.ovenpars.item\\";s:7:\\"lexicon\\";s:19:\\"ovenpars:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"sortby\\";a:7:{s:4:\\"name\\";s:6:\\"sortby\\";s:4:\\"desc\\";s:20:\\"ovenpars_prop_sortby\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:4:\\"name\\";s:7:\\"lexicon\\";s:19:\\"ovenpars:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:7:\\"sortdir\\";a:7:{s:4:\\"name\\";s:7:\\"sortdir\\";s:4:\\"desc\\";s:21:\\"ovenpars_prop_sortdir\\";s:4:\\"type\\";s:4:\\"list\\";s:7:\\"options\\";a:2:{i:0;a:2:{s:4:\\"text\\";s:3:\\"ASC\\";s:5:\\"value\\";s:3:\\"ASC\\";}i:1;a:2:{s:4:\\"text\\";s:4:\\"DESC\\";s:5:\\"value\\";s:4:\\"DESC\\";}}s:5:\\"value\\";s:3:\\"ASC\\";s:7:\\"lexicon\\";s:19:\\"ovenpars:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:5:\\"limit\\";a:7:{s:4:\\"name\\";s:5:\\"limit\\";s:4:\\"desc\\";s:19:\\"ovenpars_prop_limit\\";s:4:\\"type\\";s:11:\\"numberfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";i:10;s:7:\\"lexicon\\";s:19:\\"ovenpars:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:15:\\"outputSeparator\\";a:7:{s:4:\\"name\\";s:15:\\"outputSeparator\\";s:4:\\"desc\\";s:29:\\"ovenpars_prop_outputSeparator\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:1:\\"\\n\\";s:7:\\"lexicon\\";s:19:\\"ovenpars:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:13:\\"toPlaceholder\\";a:7:{s:4:\\"name\\";s:13:\\"toPlaceholder\\";s:4:\\"desc\\";s:27:\\"ovenpars_prop_toPlaceholder\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:0;s:7:\\"lexicon\\";s:19:\\"ovenpars:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"core\\/components\\/ovenpars\\/elements\\/snippets\\/ovenpars.php","content":"\\/** @var modX $modx *\\/\\r\\n\\/** @var array $scriptProperties *\\/\\r\\n\\/** @var ovenpars $ovenpars *\\/\\r\\n$ovenpars = $modx->getService(\'ovenpars\', \'ovenpars\', MODX_CORE_PATH . \'components\\/ovenpars\\/model\\/\', $scriptProperties);\\r\\nif (!$ovenpars) {\\r\\n    return \'Could not load ovenpars class!\';\\r\\n}\\r\\n\\r\\n\\/\\/ Do your snippet code here. This demo grabs 5 items from our custom table.\\r\\n$tpl = $modx->getOption(\'tpl\', $scriptProperties, \'Item\');\\r\\n$sortby = $modx->getOption(\'sortby\', $scriptProperties, \'name\');\\r\\n$sortdir = $modx->getOption(\'sortbir\', $scriptProperties, \'ASC\');\\r\\n$limit = $modx->getOption(\'limit\', $scriptProperties, 5);\\r\\n$outputSeparator = $modx->getOption(\'outputSeparator\', $scriptProperties, \\"\\\\n\\");\\r\\n$toPlaceholder = $modx->getOption(\'toPlaceholder\', $scriptProperties, false);\\r\\n\\r\\n\\/\\/ Build query\\r\\n$c = $modx->newQuery(\'ovenparsItem\');\\r\\n$c->sortby($sortby, $sortdir);\\r\\n$c->where([\'active\' => 1]);\\r\\n$c->limit($limit);\\r\\n$items = $modx->getIterator(\'ovenparsItem\', $c);\\r\\n\\r\\n\\/\\/ Iterate through items\\r\\n$list = [];\\r\\n\\/** @var ovenparsItem $item *\\/\\r\\nforeach ($items as $item) {\\r\\n    $list[] = $modx->getChunk($tpl, $item->toArray());\\r\\n}\\r\\n\\r\\n\\/\\/ Output\\r\\n$output = implode($outputSeparator, $list);\\r\\nif (!empty($toPlaceholder)) {\\r\\n    \\/\\/ If using a placeholder, output nothing and set output to specified placeholder\\r\\n    $modx->setPlaceholder($toPlaceholder, $output);\\r\\n\\r\\n    return \'\';\\r\\n}\\r\\n\\/\\/ By default just return output\\r\\nreturn $output;","file":"ovenpars"}',
+        'guid' => '749f115ba6f17b1c83d79af3b5e271f1',
+        'native_key' => 0,
+        'signature' => 'b5dadb8a23978b9a7879d82c4188f14c',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'ovenpars',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"ovenpars-2.0.0-pl\\/modCategory\\/a226d71bd2adfe4b0b27dd04a71f8808\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"ovenpars"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"ovenpars-2.0.0-pl\\/modCategory\\/a226d71bd2adfe4b0b27dd04a71f8808\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"ovenpars"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"ovenpars-2.0.0-pl\\/modCategory\\/a226d71bd2adfe4b0b27dd04a71f8808.symlinks.resolver","type":"php","name":"symlinks"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"ovenpars-2.0.0-pl\\/modCategory\\/a226d71bd2adfe4b0b27dd04a71f8808.tables.resolver","type":"php","name":"tables"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '3ddf4bbed3d283f34d86d8559b7329b9',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'a226d71bd2adfe4b0b27dd04a71f8808',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"ovenpars","rank":0}',
+);

@@ -1,0 +1,4 @@
+[2019-11-17 20:30:49] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-17 20:30:49] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-17 20:30:49] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-17 20:30:49] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.

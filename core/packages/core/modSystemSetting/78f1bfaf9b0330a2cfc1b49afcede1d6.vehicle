@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '074f4a2f4af0ef3a1e730bd077d7a835',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '78f1bfaf9b0330a2cfc1b49afcede1d6',
+  'native_key' => 'static_elements_automate_chunks',
+  'object' => '{"key":"static_elements_automate_chunks","value":"0","xtype":"combo-boolean","namespace":"core","area":"static_elements","editedon":null}',
+);
