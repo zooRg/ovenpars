@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2e52633e5333a0bc33b1602f080e0205',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '8d3c5b268eefa315c3e03aa9b7924f83',
+  'native_key' => 'syncsite_default',
+  'object' => '{"key":"syncsite_default","value":"1","xtype":"combo-boolean","namespace":"core","area":"caching","editedon":null}',
+);

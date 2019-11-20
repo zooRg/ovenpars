@@ -1,0 +1,11 @@
+Changelog for ovenpars.
+
+1.0.1
+==============
+- Added logic
+- Added settings
+- Added save/update on DB
+
+1.0.0-beta
+==============
+- Added packages
