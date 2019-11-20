@@ -4,6 +4,11 @@
   array (
     'changelog' => 'Changelog for ovenpars.
 
+1.1.0
+==============
+- Added import site_catalog
+- Added import image
+
 1.0.1
 ==============
 - Added logic

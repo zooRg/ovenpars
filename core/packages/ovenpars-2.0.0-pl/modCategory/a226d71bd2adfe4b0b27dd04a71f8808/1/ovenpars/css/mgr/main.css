@@ -94,3 +94,10 @@ a.ovenpars-btn.disabled, fieldset[disabled] a.ovenpars-btn { pointer-events: non
 .ovenpars-btn-xs { padding: 1px 5px; font-size: 12px; line-height: 1.5; border-radius: 3px }
 .ovenpars-btn-block { display: block; width: 100% }
 .ovenpars-btn-block + .ovenpars-btn-block { margin-top: 5px }
+
+#currentStatus {display: flex;align-items: center;min-width: 200px;height: 30px;}
+#currentStatus .icon {margin-right: 10px;transform: rotate(0deg) scale(1.4);-webkit-animation: 1.5s linear 0s infinite move;-moz-animation: 1.5s linear 0s infinite move;-o-animation: 1.5s linear 0s infinite move;animation: 1.5s linear 0s infinite move;}
+@-webkit-keyframes move { from {transform: rotate(0deg) scale(1.4);} to {transform: rotate(360deg) scale(1.4);} }
+@-moz-keyframes move { from {transform: rotate(0deg) scale(1.4); } to {transform: rotate(360deg) scale(1.4);} }
+@-o-keyframes move { from {transform: rotate(0deg) scale(1.4);} to {transform: rotate(360deg) scale(1.4);} }
+@keyframes move { from {transform: rotate(0deg) scale(1.4);} to {transform: rotate(360deg) scale(1.4);} }

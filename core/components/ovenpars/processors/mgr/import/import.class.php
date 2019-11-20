@@ -1,4 +1,6 @@
 <?php
+define('OVENPARS_IMAGE_PATH', $_SERVER['DOCUMENT_ROOT'] . MODX_ASSETS_URL . 'img/ovenpars/');
+require_once MODX_CORE_PATH.'model/phpthumb/phpthumb.class.php';
 
 class ovenparsItemImportProcessor extends modObjectCreateProcessor
 {
@@ -10,6 +12,7 @@ class ovenparsItemImportProcessor extends modObjectCreateProcessor
 	private $template;
 	private $price;
 	private $description;
+	private $image;
 	
 	/**
 	 * We doing special check of permission
@@ -35,17 +38,20 @@ class ovenparsItemImportProcessor extends modObjectCreateProcessor
 	    $this->template = $this->getProperty('template');
 	    $this->price = $this->getProperty('price');
 	    $this->description = $this->getProperty('description');
+	    $this->image = $this->getProperty('image');
 	    $lasID = $this->getProperty('lasID') ? (int) $this->getProperty('lasID') : 1;
 	
-	    $countItems = count($this->modx->getCollection($this->classKey));
 	    $res = $this->modx->newQuery($this->classKey, array('id:>=' => $lasID, 'active' => 1));
 	    $res->limit(100);
 	    $res->prepare();
 	    $res->stmt->execute();
 	    $object = $res->stmt->fetchAll(PDO::FETCH_ASSOC);
 	    $items_current = $this->getProperty('items_current') ? $this->getProperty('items_current') : 1;
+	    $countItems = count($this->modx->getCollection($this->classKey, ['active' => 1]));
 	    
-	    foreach ($object as $k => $item) {
+	    foreach ($object as $item) {
+		    if (!$item) continue;
+		    
 	    	$id = $item[$this->classKey . '_' .'id'];
 	    	$parent = $item[$this->classKey . '_' .'parent'];
 	    	$name = $item[$this->classKey . '_' .'name'];
@@ -57,6 +63,9 @@ class ovenparsItemImportProcessor extends modObjectCreateProcessor
 			    if (!$resource = $this->modx->getObject('modResource', ['pagetitle' => $name, 'parent' => $this->parent])) {
 				    $resource = $this->modx->newObject('modResource');
 			    }
+			    
+			    $min = $this->getImage($resourceModx, $resource, $image);
+			    
 			    $resource->set('published', 1);
 			    $resource->set('pagetitle', $name);
 			    $resource->set('alias', $this->str2url($name));
@@ -66,9 +75,14 @@ class ovenparsItemImportProcessor extends modObjectCreateProcessor
 			    $resource->set('template', $this->template);
 			    $resource->set('tv_' . $this->price, $price);
 			    $resource->set('tv_' . $this->description, $description['props']);
+			    if ($min) {
+				    $resource->set('tv_' . $this->image, $min);
+				    $resource->setTVValue($this->image, $min);
+			    }
 			    $resource->setTVValue($this->price, $price);
 			    $resource->setTVValue($this->description, $description['props']);
 			    $resource->save();
+			    unset($resource);
 		    }
 		    $lasID = (int) $id;
 		    $items_current += 1;
@@ -84,8 +98,58 @@ class ovenparsItemImportProcessor extends modObjectCreateProcessor
 		    'countItems'    => $countItems,
 	    ]);
     }
+    
+    private function getImage($resourceModx, $resource, $image)
+    {
+	    $minOut = '';
+	    $origin = OVENPARS_IMAGE_PATH . 'origin/' . $resourceModx->get('id') . '/img_' . $resource->get('id') . '.jpg';
 	
-	public static function rus2translit($string) {
+	    if (!is_dir(OVENPARS_IMAGE_PATH . 'origin/' . $resourceModx->get('id') . '/')) {
+		    mkdir(OVENPARS_IMAGE_PATH . 'origin/' . $resourceModx->get('id') . '/');
+	    }
+	    if (!is_dir(OVENPARS_IMAGE_PATH . 'thumb/' . $resourceModx->get('id') . '/')) {
+		    mkdir(OVENPARS_IMAGE_PATH . 'thumb/' . $resourceModx->get('id') . '/');
+	    }
+	
+	    if (!file_exists($origin) && !copy($image[0], $origin)) {
+		    $this->modx->log(modX::LOG_LEVEL_ERROR, 'не удалось скопировать ' . $image[0]);
+	    } else {
+		    $size = getimagesize($origin);
+		    $sizeW = $size[0];
+		    $sizeH = $size[1];
+		
+		    $phpThumb = new phpThumb();
+		    $phpThumb->setSourceFilename($origin);
+		    $params = array(
+			    'sx'  => ($sizeW * 0.05),
+			    'sy'  => ($sizeH * 0.05),
+			    'sw'  => ($sizeW * 0.90),
+			    'sh'  => ($sizeH * 0.80),
+			    'bg' => 'ffffff',
+			    'q'  => 95,
+			    'zc' => 'TL',
+			    'f'  => 'jpg'
+		    );
+		    foreach ($params as $key => $value) {
+			    $phpThumb->setParameter($key, $value);
+		    }
+		
+		    $min = OVENPARS_IMAGE_PATH . 'thumb/' . $resourceModx->get('id') . '/img_' . $resource->get('id') . '.jpg';
+		    $minOut = str_replace($_SERVER['DOCUMENT_ROOT'], '', $min);
+		    if ($phpThumb->GenerateThumbnail()) {
+			    if (!$phpThumb->renderToFile($min)) {
+				    $this->modx->log(modX::LOG_LEVEL_ERROR, 'Could not save rendered image to' . $min);
+			    }
+		    } else {
+			    $this->modx->log(modX::LOG_LEVEL_ERROR, print_r($phpThumb->debugmessages, 1));
+		    }
+		    unset($phpThumb, $origin, $params);
+	    }
+	    
+	    return $minOut;
+    }
+
+    private function rus2translit($string) {
 		$converter = array(
 			'а' => 'a',   'б' => 'b',   'в' => 'v',
 			'г' => 'g',   'д' => 'd',   'е' => 'e',
@@ -114,9 +178,9 @@ class ovenparsItemImportProcessor extends modObjectCreateProcessor
 		return strtr($string, $converter);
 	}
 	
-	public static function str2url($str) {
+	private function str2url($str) {
 		// переводим в транслит
-		$str = self::rus2translit($str);
+		$str = $this->rus2translit($str);
 		// в нижний регистр
 		$str = strtolower($str);
 		// заменям все ненужное нам на "-"

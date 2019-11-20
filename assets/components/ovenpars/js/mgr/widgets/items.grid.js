@@ -76,6 +76,7 @@ Ext.extend(ovenpars.grid.Items, MODx.grid.Grid, {
                 template: ovenpars.config.setting_template_id,
                 price: ovenpars.config.setting_price_tv,
                 description: ovenpars.config.setting_desc_tv,
+                image: ovenpars.config.setting_image_tv,
                 items_current: request.items_current
             },
             listeners: {

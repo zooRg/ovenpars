@@ -11,6 +11,7 @@
   'setting_template_id' => 'ID шаблона',
   'setting_price_tv' => 'Поле с ценой',
   'setting_desc_tv' => 'Поле с описанием',
+  'setting_image_tv' => 'Поле с картинками',
   'ovenpars' => 'Парсер сайта delopechnoe',
   'ovenpars_menu_desc' => 'Парсим товары в свою таблицу с последующим переносом в каталог.',
   'ovenpars_intro_msg' => 'Настроить парсер можно в системных настройках - выбрать нужный пункт "ovenpars"',

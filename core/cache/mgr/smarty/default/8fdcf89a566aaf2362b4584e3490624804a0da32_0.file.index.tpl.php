@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-18 09:26:54
+/* Smarty version 3.1.33, created on 2019-11-20 11:34:26
   from 'F:\OSPanel\OSPanel\domains\ovenpars\manager\templates\default\workspaces\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dd239ae41c071_36288703',
+  'unifunc' => 'content_5dd4fa92af9910_68595001',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dd239ae41c071_36288703 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dd4fa92af9910_68595001 (Smarty_Internal_Template $_smarty_tpl) {
 echo (($tmp = @$_smarty_tpl->tpl_vars['error']->value)===null||$tmp==='' ? '' : $tmp);?>
 
 <div id="modx-panel-workspace-div"></div>

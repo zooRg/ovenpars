@@ -8,100 +8,113 @@
     array (
       0 => 1,
       1 => 2,
+      2 => 331,
     ),
     2 => 
     array (
-      0 => 3,
-      1 => 4,
-      2 => 5,
-      3 => 6,
-      4 => 7,
-      5 => 8,
-      6 => 9,
-      7 => 10,
-      8 => 11,
-      9 => 12,
-      10 => 13,
-      11 => 14,
-      12 => 15,
-      13 => 16,
-      14 => 17,
-      15 => 18,
-      16 => 19,
-      17 => 20,
-      18 => 21,
-      19 => 22,
-      20 => 23,
-      21 => 24,
-      22 => 25,
-      23 => 26,
-      24 => 27,
-      25 => 28,
-      26 => 29,
-      27 => 30,
-      28 => 31,
-      29 => 32,
-      30 => 33,
-      31 => 34,
-      32 => 35,
-      33 => 36,
-      34 => 37,
-      35 => 38,
-      36 => 39,
-      37 => 40,
-      38 => 41,
-      39 => 42,
-      40 => 43,
-      41 => 44,
-      42 => 45,
-      43 => 46,
-      44 => 47,
-      45 => 48,
-      46 => 49,
-      47 => 50,
-      48 => 51,
-      49 => 52,
-      50 => 53,
-      51 => 54,
-      52 => 55,
-      53 => 56,
-      54 => 57,
-      55 => 58,
-      56 => 59,
-      57 => 60,
-      58 => 61,
-      59 => 62,
-      60 => 63,
-      61 => 64,
-      62 => 65,
-      63 => 66,
-      64 => 67,
-      65 => 68,
-      66 => 69,
-      67 => 70,
-      68 => 71,
-      69 => 72,
-      70 => 73,
-      71 => 74,
-      72 => 75,
-      73 => 76,
-      74 => 77,
-      75 => 78,
-      76 => 79,
-      77 => 80,
-      78 => 81,
-      79 => 82,
-      80 => 83,
-      81 => 84,
-      82 => 85,
-      83 => 86,
-      84 => 87,
-      85 => 88,
-      86 => 89,
-      87 => 90,
-      88 => 91,
-      89 => 92,
-      90 => 93,
+      0 => 252,
+      1 => 253,
+      2 => 254,
+      3 => 255,
+      4 => 256,
+      5 => 257,
+      6 => 258,
+      7 => 259,
+      8 => 260,
+      9 => 261,
+      10 => 262,
+      11 => 263,
+      12 => 264,
+      13 => 265,
+      14 => 266,
+      15 => 267,
+      16 => 268,
+      17 => 269,
+      18 => 270,
+      19 => 271,
+      20 => 272,
+      21 => 273,
+      22 => 274,
+      23 => 275,
+      24 => 276,
+      25 => 277,
+      26 => 278,
+      27 => 279,
+      28 => 280,
+      29 => 281,
+      30 => 282,
+      31 => 283,
+      32 => 284,
+      33 => 285,
+      34 => 286,
+      35 => 287,
+      36 => 288,
+      37 => 289,
+      38 => 290,
+      39 => 291,
+      40 => 292,
+      41 => 293,
+      42 => 294,
+      43 => 295,
+      44 => 296,
+      45 => 297,
+      46 => 298,
+      47 => 299,
+      48 => 300,
+      49 => 301,
+      50 => 302,
+      51 => 303,
+      52 => 304,
+      53 => 305,
+      54 => 306,
+      55 => 307,
+      56 => 308,
+      57 => 309,
+      58 => 310,
+      59 => 311,
+      60 => 312,
+      61 => 313,
+      62 => 314,
+      63 => 315,
+      64 => 316,
+      65 => 317,
+      66 => 318,
+      67 => 319,
+      68 => 320,
+      69 => 321,
+      70 => 322,
+      71 => 323,
+      72 => 324,
+      73 => 325,
+      74 => 326,
+      75 => 327,
+      76 => 328,
+      77 => 329,
+      78 => 330,
+    ),
+    331 => 
+    array (
+      0 => 332,
+      1 => 333,
+      2 => 334,
+      3 => 335,
+      4 => 336,
+      5 => 337,
+      6 => 338,
+      7 => 339,
+      8 => 340,
+      9 => 341,
+      10 => 342,
+      11 => 343,
+      12 => 344,
+      13 => 345,
+      14 => 346,
+      15 => 347,
+      16 => 348,
+      17 => 349,
+      18 => 350,
+      19 => 351,
+      20 => 352,
     ),
   ),
   'webLinkMap' => 
@@ -115,6 +128,7 @@
     ),
     'OnDocFormPrerender' => 
     array (
+      4 => '4',
       3 => '3',
     ),
     'OnFileCreateFormPrerender' => 
@@ -124,6 +138,10 @@
     'OnFileEditFormPrerender' => 
     array (
       3 => '3',
+    ),
+    'OnFileManagerUpload' => 
+    array (
+      6 => '6',
     ),
     'OnMODXInit' => 
     array (
@@ -157,6 +175,14 @@
     'OnTempFormPrerender' => 
     array (
       3 => '3',
+    ),
+    'OnTVInputPropertiesList' => 
+    array (
+      4 => '4',
+    ),
+    'OnTVInputRenderList' => 
+    array (
+      4 => '4',
     ),
     'OnWebPagePrerender' => 
     array (
@@ -452,6 +478,194 @@ if ($script) {
       'moduleguid' => '',
       'static' => '0',
       'static_file' => 'ace/elements/plugins/ace.plugin.php',
+    ),
+    4 => 
+    array (
+      'id' => '4',
+      'source' => '0',
+      'property_preprocess' => '0',
+      'name' => 'MIGX',
+      'description' => '',
+      'editor_type' => '0',
+      'category' => '10',
+      'cache_type' => '0',
+      'plugincode' => '$corePath = $modx->getOption(\'migx.core_path\',null,$modx->getOption(\'core_path\').\'components/migx/\');
+$assetsUrl = $modx->getOption(\'migx.assets_url\', null, $modx->getOption(\'assets_url\') . \'components/migx/\');
+switch ($modx->event->name) {
+    case \'OnTVInputRenderList\':
+        $modx->event->output($corePath.\'elements/tv/input/\');
+        break;
+    case \'OnTVInputPropertiesList\':
+        $modx->event->output($corePath.\'elements/tv/inputoptions/\');
+        break;
+
+        case \'OnDocFormPrerender\':
+        $modx->controller->addCss($assetsUrl.\'css/mgr.css\');
+        break; 
+ 
+    /*          
+    case \'OnTVOutputRenderList\':
+        $modx->event->output($corePath.\'elements/tv/output/\');
+        break;
+    case \'OnTVOutputRenderPropertiesList\':
+        $modx->event->output($corePath.\'elements/tv/properties/\');
+        break;
+    
+    case \'OnDocFormPrerender\':
+        $assetsUrl = $modx->getOption(\'colorpicker.assets_url\',null,$modx->getOption(\'assets_url\').\'components/colorpicker/\'); 
+        $modx->regClientStartupHTMLBlock(\'<script type="text/javascript">
+        Ext.onReady(function() {
+            
+        });
+        </script>\');
+        $modx->regClientStartupScript($assetsUrl.\'sources/ColorPicker.js\');
+        $modx->regClientStartupScript($assetsUrl.\'sources/ColorMenu.js\');
+        $modx->regClientStartupScript($assetsUrl.\'sources/ColorPickerField.js\');		
+        $modx->regClientCSS($assetsUrl.\'resources/css/colorpicker.css\');
+        break;
+     */
+}
+return;',
+      'locked' => '0',
+      'properties' => 'a:0:{}',
+      'disabled' => '0',
+      'moduleguid' => '',
+      'static' => '0',
+      'static_file' => '',
+    ),
+    6 => 
+    array (
+      'id' => '6',
+      'source' => '0',
+      'property_preprocess' => '0',
+      'name' => 'migxResizeOnUpload',
+      'description' => '',
+      'editor_type' => '0',
+      'category' => '10',
+      'cache_type' => '0',
+      'plugincode' => '/**
+ * migxResizeOnUpload Plugin
+ *
+ * Events: OnFileManagerUpload
+ * Author: Bruno Perner <b.perner@gmx.de>
+ * Modified to read multiple configs from mediasource-property
+ * 
+ * First Author: Vasiliy Naumkin <bezumkin@yandex.ru>
+ * Required: PhpThumbOf snippet for resizing images
+ * 
+ * Example: mediasource - property \'resizeConfig\':
+ * [{"alias":"origin","w":"500","h":"500","far":1},{"alias":"thumb","w":"150","h":"150","far":1}]
+ */
+
+if ($modx->event->name != \'OnFileManagerUpload\') {
+    return;
+}
+
+
+$file = $modx->event->params[\'files\'][\'file\'];
+$directory = $modx->event->params[\'directory\'];
+
+if ($file[\'error\'] != 0) {
+    return;
+}
+
+$name = $file[\'name\'];
+//$extensions = explode(\',\', $modx->getOption(\'upload_images\'));
+
+$source = $modx->event->params[\'source\'];
+
+if ($source instanceof modMediaSource) {
+    //$dirTree = $modx->getOption(\'dirtree\', $_REQUEST, \'\');
+    //$modx->setPlaceholder(\'docid\', $resource_id);
+    $source->initialize();
+    $basePath = str_replace(\'/./\', \'/\', $source->getBasePath());
+    //$cachepath = $cachepath . $dirTree;
+    $baseUrl = $modx->getOption(\'site_url\') . $source->getBaseUrl();
+    //$baseUrl = $baseUrl . $dirTree;
+    $sourceProperties = $source->getPropertyList();
+
+    //echo \'<pre>\' . print_r($sourceProperties, 1) . \'</pre>\';
+    //$allowedExtensions = $modx->getOption(\'allowedFileTypes\', $sourceProperties, \'\');
+    //$allowedExtensions = empty($allowedExtensions) ? \'jpg,jpeg,png,gif\' : $allowedExtensions;
+    //$maxFilesizeMb = $modx->getOption(\'maxFilesizeMb\', $sourceProperties, \'8\');
+    //$maxFiles = $modx->getOption(\'maxFiles\', $sourceProperties, \'0\');
+    //$thumbX = $modx->getOption(\'thumbX\', $sourceProperties, \'100\');
+    //$thumbY = $modx->getOption(\'thumbY\', $sourceProperties, \'100\');
+    $resizeConfigs = $modx->getOption(\'resizeConfigs\', $sourceProperties, \'\');
+    $resizeConfigs = $modx->fromJson($resizeConfigs);
+    $thumbscontainer = $modx->getOption(\'thumbscontainer\', $sourceProperties, \'thumbs/\');
+    $imageExtensions = $modx->getOption(\'imageExtensions\', $sourceProperties, \'jpg,jpeg,png,gif,JPG\');
+    $imageExtensions = explode(\',\', $imageExtensions);
+    //$uniqueFilenames = $modx->getOption(\'uniqueFilenames\', $sourceProperties, false);
+    //$onImageUpload = $modx->getOption(\'onImageUpload\', $sourceProperties, \'\');
+    //$onImageRemove = $modx->getOption(\'onImageRemove\', $sourceProperties, \'\');
+    $cleanalias = $modx->getOption(\'cleanFilename\', $sourceProperties, false);
+
+}
+
+if (is_array($resizeConfigs) && count($resizeConfigs) > 0) {
+    foreach ($resizeConfigs as $rc) {
+        if (isset($rc[\'alias\'])) {
+            $filePath = $basePath . $directory;
+            $filePath = str_replace(\'//\',\'/\',$filePath);
+            if ($rc[\'alias\'] == \'origin\') {
+                $thumbPath = $filePath;
+            } else {
+                $thumbPath = $filePath . $rc[\'alias\'] . \'/\';
+                $permissions = octdec(\'0\' . (int)($modx->getOption(\'new_folder_permissions\', null, \'755\', true)));
+                if (!@mkdir($thumbPath, $permissions, true)) {
+                    $modx->log(MODX_LOG_LEVEL_ERROR, sprintf(\'[migxResourceMediaPath]: could not create directory %s).\', $thumbPath));
+                } else {
+                    chmod($thumbPath, $permissions);
+                }
+
+            }
+
+
+            $filename = $filePath . $name;
+            $thumbname = $thumbPath . $name;
+            $ext = substr(strrchr($name, \'.\'), 1);
+            if (in_array($ext, $imageExtensions)) {
+                $sizes = getimagesize($filename);
+                echo $sizes[0]; 
+                //$format = substr($sizes[\'mime\'], 6);
+                if ($sizes[0] > $rc[\'w\'] || $sizes[1] > $rc[\'h\']) {
+                    if ($sizes[0] < $rc[\'w\']) {
+                        $rc[\'w\'] = $sizes[0];
+                    }
+                    if ($sizes[1] < $rc[\'h\']) {
+                        $rc[\'h\'] = $sizes[1];
+                    }
+                    $type = $sizes[0] > $sizes[1] ? \'landscape\' : \'portrait\';
+                    if (isset($rc[\'far\']) && $rc[\'far\'] == \'1\' && isset($rc[\'w\']) && isset($rc[\'h\'])) {
+                        if ($type = \'landscape\') {
+                            unset($rc[\'h\']);
+                        }else {
+                            unset($rc[\'w\']);
+                        }
+                    }
+
+                    $options = \'\';
+                    foreach ($rc as $k => $v) {
+                        if ($k != \'alias\') {
+                            $options .= \'&\' . $k . \'=\' . $v;
+                        }
+                    }
+                    $resized = $modx->runSnippet(\'phpthumbof\', array(\'input\' => $filePath . $name, \'options\' => $options));
+                    rename(MODX_BASE_PATH . substr($resized, 1), $thumbname);
+                }
+            }
+
+
+        }
+    }
+}',
+      'locked' => '0',
+      'properties' => 'a:0:{}',
+      'disabled' => '0',
+      'moduleguid' => '',
+      'static' => '0',
+      'static_file' => '',
     ),
   ),
   'policies' => 

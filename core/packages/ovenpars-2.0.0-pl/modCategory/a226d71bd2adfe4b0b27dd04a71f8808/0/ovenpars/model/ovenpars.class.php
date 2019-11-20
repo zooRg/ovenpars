@@ -36,6 +36,7 @@ class ovenpars
 	        'setting_template_id' => $this->modx->getOption('template_id', null),
 	        'setting_price_tv' => $this->modx->getOption('price_tv', null),
 	        'setting_desc_tv' => $this->modx->getOption('desc_tv', null),
+	        'setting_image_tv' => $this->modx->getOption('image_tv', null),
         ], $config);
 
         $this->modx->addPackage('ovenpars', $this->config['modelPath']);

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-18 09:26:01
+/* Smarty version 3.1.33, created on 2019-11-20 09:59:47
   from 'F:\OSPanel\OSPanel\domains\ovenpars\manager\templates\default\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dd239796386a9_12739989',
+  'unifunc' => 'content_5dd4e4638a4028_61334655',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dd239796386a9_12739989 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dd4e4638a4028_61334655 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" dir="<?php echo $_smarty_tpl->tpl_vars['_config']->value['manager_direction'];?>
 " lang="<?php echo $_smarty_tpl->tpl_vars['_config']->value['manager_lang_attribute'];?>

@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-19 12:43:58
+/* Smarty version 3.1.33, created on 2019-11-20 16:10:25
   from 'F:\OSPanel\OSPanel\domains\ovenpars\manager\templates\default\resource\create.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dd3b95ec5b672_63940271',
+  'unifunc' => 'content_5dd53b4104ace8_36110270',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dd3b95ec5b672_63940271 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dd53b4104ace8_36110270 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="modx-panel-resource-div"></div>
 <div id="modx-resource-tvs-div" class="modx-resource-tab x-form-label-left x-panel"><?php echo (($tmp = @$_smarty_tpl->tpl_vars['tvOutput']->value)===null||$tmp==='' ? '' : $tmp);?>
 </div>

@@ -53,3 +53,44 @@ $modx->initialize('web');
 if (!MODX_API_MODE) {
     $modx->handleRequest();
 }
+?>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">
+			<div class="swiper-slide__img">
+				<img src="https://media.lpgenerator.ru/images/553005/sloj-0-1_0wNtpEe.png" alt="">
+			</div>
+		</div>
+		<div class="swiper-slide">
+			<div class="swiper-slide__img">
+				<img src="https://media.lpgenerator.ru/images/553005/sloj-0-1_0wNtpEe.png" alt="">
+			</div>
+		</div>
+	</div>
+	<!-- Add Arrows -->
+	<div class="swiper-button-next"></div>
+	<div class="swiper-button-prev"></div>
+</div>
+<script>
+	var swiper = new Swiper('.swiper-container', {
+		autoHeight: true,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+</script>
+<style>
+	.swiper-slide__img img,
+	.swiper-slide__img,
+	.swiper-slide {
+		max-width: 320px;
+		max-height: 320px;
+	}
+	.swiper-button-next,
+	.swiper-button-prev {
+		color: #ff1f55 !important;
+	}
+</style>

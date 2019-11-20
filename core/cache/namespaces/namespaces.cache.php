@@ -11,6 +11,12 @@
     'path' => 'F:/OSPanel/OSPanel/domains/ovenpars/manager/',
     'assets_path' => 'F:/OSPanel/OSPanel/domains/ovenpars/manager/assets/',
   ),
+  'migx' => 
+  array (
+    'name' => 'migx',
+    'path' => 'F:/OSPanel/OSPanel/domains/ovenpars/core/components/migx/',
+    'assets_path' => 'F:/OSPanel/OSPanel/domains/ovenpars/assets/components/migx/',
+  ),
   'ovenpars' => 
   array (
     'name' => 'ovenpars',

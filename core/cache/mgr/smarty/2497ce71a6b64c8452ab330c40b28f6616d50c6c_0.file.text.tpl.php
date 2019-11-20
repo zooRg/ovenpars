@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-19 15:41:04
+/* Smarty version 3.1.33, created on 2019-11-20 11:31:42
   from 'F:\OSPanel\OSPanel\domains\ovenpars\manager\templates\default\element\tv\renders\inputproperties\text.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dd3e2e074e416_53488401',
+  'unifunc' => 'content_5dd4f9eebedd16_10322088',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dd3e2e074e416_53488401 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dd4f9eebedd16_10322088 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div id="tv-input-properties-form<?php echo (($tmp = @$_smarty_tpl->tpl_vars['tv']->value)===null||$tmp==='' ? '' : $tmp);?>
 "></div>
 

@@ -1,6 +1,26 @@
 <?php  return array (
   0 => 
   array (
+    'text' => 'MIGX',
+    'parent' => 'topnav',
+    'action' => 'index',
+    'description' => '',
+    'icon' => '',
+    'menuindex' => 0,
+    'params' => '&configs=packagemanager||migxconfigs||setup',
+    'handler' => '',
+    'permissions' => '',
+    'namespace' => 'migx',
+    'action_controller' => NULL,
+    'action_namespace' => NULL,
+    'id' => 'migx',
+    'children' => 
+    array (
+    ),
+    'controller' => '',
+  ),
+  1 => 
+  array (
     'text' => 'Содержимое',
     'parent' => 'topnav',
     'action' => '',
@@ -139,7 +159,7 @@
     ),
     'controller' => '',
   ),
-  1 => 
+  2 => 
   array (
     'text' => 'Медиа',
     'parent' => 'topnav',
@@ -199,7 +219,7 @@
     ),
     'controller' => '',
   ),
-  2 => 
+  3 => 
   array (
     'text' => 'Пакеты',
     'parent' => 'topnav',
@@ -259,7 +279,7 @@
     ),
     'controller' => '',
   ),
-  3 => 
+  4 => 
   array (
     'text' => 'Управление',
     'parent' => 'topnav',
