@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'ovenpars',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8ace3d2526d7e79e42ed3ae39c45356a',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '87a069bc6f4ad5cc9d6b7c36c2d1b1d4',
+  'native_key' => 'desc_tv',
+  'object' => '{"key":"desc_tv","value":"description","xtype":"textfield","namespace":"ovenpars","area":"ovenpars_import","editedon":null}',
+);

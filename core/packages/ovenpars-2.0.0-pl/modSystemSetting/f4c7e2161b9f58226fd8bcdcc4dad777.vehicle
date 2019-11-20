@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'ovenpars',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a640b6dd6274221a848fc6bbd2c1966e',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'f4c7e2161b9f58226fd8bcdcc4dad777',
+  'native_key' => 'image_tv',
+  'object' => '{"key":"image_tv","value":"image","xtype":"textfield","namespace":"ovenpars","area":"ovenpars_import","editedon":null}',
+);

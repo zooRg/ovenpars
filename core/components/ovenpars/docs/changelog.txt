@@ -1,5 +1,22 @@
 Changelog for ovenpars.
 
+1.1.1
+==============
+- Added regex on description
+- Added filter by section
+- Added field by url parse
+
+1.1.0
+==============
+- Added import site_catalog
+- Added import image
+
+1.0.1
+==============
+- Added logic
+- Added settings
+- Added save/update on DB
+
 1.0.0-beta
 ==============
 - Added packages

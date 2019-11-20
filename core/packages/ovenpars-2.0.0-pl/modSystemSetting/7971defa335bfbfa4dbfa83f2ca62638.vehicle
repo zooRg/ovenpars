@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'ovenpars',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b5bc92950755227b6dcaa8fd6fd83a40',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '7971defa335bfbfa4dbfa83f2ca62638',
+  'native_key' => 'price_tv',
+  'object' => '{"key":"price_tv","value":"price","xtype":"textfield","namespace":"ovenpars","area":"ovenpars_import","editedon":null}',
+);

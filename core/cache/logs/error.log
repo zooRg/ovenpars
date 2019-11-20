@@ -164,3 +164,24 @@ Array
     [2] => Unknown column 'ovenparsItem.parent' in 'field list'
 )
 
+[2019-11-21 00:20:40] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\om\xpdoobject.class.php : 240) Error 42S22 executing statement: 
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'ovenparsItem.parent' in 'field list'
+)
+
+[2019-11-21 00:21:45] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-21 00:21:45] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-21 00:21:45] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-21 00:21:45] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-21 00:23:50] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-21 00:23:50] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-21 00:23:50] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-21 00:23:50] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-21 00:51:31] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class:  from .mysql..
+[2019-11-21 00:51:31] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 762) modSession::load() is not a valid static method.
+[2019-11-21 00:53:59] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\modcachemanager.class.php : 349) Error caching lexicon topic lexicon/ru/core/default
+[2019-11-21 01:00:34] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 607) PHP warning: substr_count() expects at least 2 parameters, 1 given
+[2019-11-21 01:00:34] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 607) PHP warning: substr_count() expects at least 2 parameters, 1 given

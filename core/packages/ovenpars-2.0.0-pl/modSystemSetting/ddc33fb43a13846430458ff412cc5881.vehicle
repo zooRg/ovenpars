@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'ovenpars',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '25c906c836da48f2869b38351296ac4d',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'ddc33fb43a13846430458ff412cc5881',
+  'native_key' => 'item',
+  'object' => '{"key":"item","value":".list-item","xtype":"textfield","namespace":"ovenpars","area":"ovenpars_main","editedon":null,"description":"item_desc"}',
+);

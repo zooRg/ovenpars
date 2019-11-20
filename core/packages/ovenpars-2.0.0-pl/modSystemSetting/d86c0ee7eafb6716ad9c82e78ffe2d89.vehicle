@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'ovenpars',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'bedd53a5baa66dcecf2766ae5ddb2199',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'd86c0ee7eafb6716ad9c82e78ffe2d89',
+  'native_key' => 'section_id',
+  'object' => '{"key":"section_id","value":"1","xtype":"textfield","namespace":"ovenpars","area":"ovenpars_import","editedon":null}',
+);

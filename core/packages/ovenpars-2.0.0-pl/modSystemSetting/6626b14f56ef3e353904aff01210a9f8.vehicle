@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'ovenpars',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '83367c81eead557748c303b459355084',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '6626b14f56ef3e353904aff01210a9f8',
+  'native_key' => 'container',
+  'object' => '{"key":"container","value":"#goods_cont","xtype":"textfield","namespace":"ovenpars","area":"ovenpars_main","editedon":null,"description":"container_desc"}',
+);

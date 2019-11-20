@@ -1,0 +1,17 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => true,
+  'namespace' => 'ovenpars',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '457e468818c85af8635d16c332a8bb11',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '38df84065c5df789177a971ecca0a9b9',
+  'native_key' => 'ovenpars',
+  'object' => '{"text":"ovenpars","parent":"components","action":"home","description":"ovenpars_menu_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"","namespace":"ovenpars"}',
+);

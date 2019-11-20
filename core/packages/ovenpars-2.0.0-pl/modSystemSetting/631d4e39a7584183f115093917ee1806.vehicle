@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'ovenpars',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ec7ddad00462991d28e485209da4d275',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '631d4e39a7584183f115093917ee1806',
+  'native_key' => 'url',
+  'object' => '{"key":"url","value":"http:\\/\\/delopechnoe.ru\\/shop\\/pechi-otopitelnye","xtype":"textfield","namespace":"ovenpars","area":"ovenpars_main","editedon":null,"description":"setting_url_desc","name":"setting_url"}',
+);

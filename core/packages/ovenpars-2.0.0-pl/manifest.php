@@ -4,33 +4,20 @@
   array (
     'changelog' => 'Changelog for ovenpars.
 
-2.0.0-pl
+1.1.0
 ==============
-- New build script.
-- [#4] Ability to specify the exact repository to install package from.
-- [#6] Renaming script works in any environment.
-- Updated tables resolver.
-- All tables now InnoDB by default.
-- Removed shell renaming script.
+- Added import site_catalog
+- Added import image
 
-1.0.1-beta
+1.0.1
 ==============
-- PSR-2
-- Requires at least MODX 2.3
-- Disabling "office" resolver will clear its files from built package.
-- Fixed some typos.
+- Added logic
+- Added settings
+- Added save/update on DB
 
 1.0.0-beta
 ==============
-- Optimized for MODX 2.3
-- Improved processors
-- Disabled plugin and system settings
-- Improved UI
-- Added grid actions
-- Added icons in menu
-- Added search in grid
-- Grid sorting
-- Enable and disable actions',
+- Added packages',
     'license' => 'GNU GENERAL PUBLIC LICENSE
    Version 2, June 1991
 --------------------------
@@ -321,10 +308,10 @@ END OF TERMS AND CONDITIONS',
     'readme' => '--------------------
 ovenpars
 --------------------
-Author: John Doe <john@doe.com>
+Author: Digital Agency Dial
 --------------------
 
-A basic Extra for MODx Revolution.',
+Парсер сайта http://delopechnoe.ru товаров и добавление в каталог на сайте',
   ),
   'manifest-vehicles' => 
   array (
@@ -333,9 +320,9 @@ A basic Extra for MODx Revolution.',
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modNamespace',
-      'guid' => '2f18abe82d8fb40ab5f221e87b2229bb',
+      'guid' => '8de58a6e58f0826e748bbf1fc11ee91f',
       'native_key' => 'ovenpars',
-      'filename' => 'modNamespace/b38dfe68890f4ade39e20b87ab58c65b.vehicle',
+      'filename' => 'modNamespace/8a7733c6fb1e74ad67fee9b8c37e309b.vehicle',
       'namespace' => 'ovenpars',
     ),
     1 => 
@@ -343,19 +330,99 @@ A basic Extra for MODx Revolution.',
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modMenu',
-      'guid' => '3cdc5bae6f19bc41001ca938f2aa9194',
+      'guid' => '457e468818c85af8635d16c332a8bb11',
       'native_key' => 'ovenpars',
-      'filename' => 'modMenu/c75cf32835221675ff3bd8071322e75f.vehicle',
+      'filename' => 'modMenu/38df84065c5df789177a971ecca0a9b9.vehicle',
       'namespace' => 'ovenpars',
     ),
     2 => 
     array (
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
+      'class' => 'modSystemSetting',
+      'guid' => 'ec7ddad00462991d28e485209da4d275',
+      'native_key' => 'url',
+      'filename' => 'modSystemSetting/631d4e39a7584183f115093917ee1806.vehicle',
+      'namespace' => 'ovenpars',
+    ),
+    3 => 
+    array (
+      'vehicle_package' => 'transport',
+      'vehicle_class' => 'xPDOObjectVehicle',
+      'class' => 'modSystemSetting',
+      'guid' => '83367c81eead557748c303b459355084',
+      'native_key' => 'container',
+      'filename' => 'modSystemSetting/6626b14f56ef3e353904aff01210a9f8.vehicle',
+      'namespace' => 'ovenpars',
+    ),
+    4 => 
+    array (
+      'vehicle_package' => 'transport',
+      'vehicle_class' => 'xPDOObjectVehicle',
+      'class' => 'modSystemSetting',
+      'guid' => '25c906c836da48f2869b38351296ac4d',
+      'native_key' => 'item',
+      'filename' => 'modSystemSetting/ddc33fb43a13846430458ff412cc5881.vehicle',
+      'namespace' => 'ovenpars',
+    ),
+    5 => 
+    array (
+      'vehicle_package' => 'transport',
+      'vehicle_class' => 'xPDOObjectVehicle',
+      'class' => 'modSystemSetting',
+      'guid' => 'bedd53a5baa66dcecf2766ae5ddb2199',
+      'native_key' => 'section_id',
+      'filename' => 'modSystemSetting/d86c0ee7eafb6716ad9c82e78ffe2d89.vehicle',
+      'namespace' => 'ovenpars',
+    ),
+    6 => 
+    array (
+      'vehicle_package' => 'transport',
+      'vehicle_class' => 'xPDOObjectVehicle',
+      'class' => 'modSystemSetting',
+      'guid' => '5e70a49496137e603edcd3ea0ff53dc2',
+      'native_key' => 'template_id',
+      'filename' => 'modSystemSetting/092ddd649133eeeadeb58d1d9f5c2e9c.vehicle',
+      'namespace' => 'ovenpars',
+    ),
+    7 => 
+    array (
+      'vehicle_package' => 'transport',
+      'vehicle_class' => 'xPDOObjectVehicle',
+      'class' => 'modSystemSetting',
+      'guid' => 'b5bc92950755227b6dcaa8fd6fd83a40',
+      'native_key' => 'price_tv',
+      'filename' => 'modSystemSetting/7971defa335bfbfa4dbfa83f2ca62638.vehicle',
+      'namespace' => 'ovenpars',
+    ),
+    8 => 
+    array (
+      'vehicle_package' => 'transport',
+      'vehicle_class' => 'xPDOObjectVehicle',
+      'class' => 'modSystemSetting',
+      'guid' => '8ace3d2526d7e79e42ed3ae39c45356a',
+      'native_key' => 'desc_tv',
+      'filename' => 'modSystemSetting/87a069bc6f4ad5cc9d6b7c36c2d1b1d4.vehicle',
+      'namespace' => 'ovenpars',
+    ),
+    9 => 
+    array (
+      'vehicle_package' => 'transport',
+      'vehicle_class' => 'xPDOObjectVehicle',
+      'class' => 'modSystemSetting',
+      'guid' => 'a640b6dd6274221a848fc6bbd2c1966e',
+      'native_key' => 'image_tv',
+      'filename' => 'modSystemSetting/f4c7e2161b9f58226fd8bcdcc4dad777.vehicle',
+      'namespace' => 'ovenpars',
+    ),
+    10 => 
+    array (
+      'vehicle_package' => 'transport',
+      'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modCategory',
-      'guid' => '93da4ab08693b64ec3c9be6db3343032',
+      'guid' => '06161ae732ea5ccacf6a47d7e2729e2a',
       'native_key' => NULL,
-      'filename' => 'modCategory/95f1d955c71354ec7d49cda55d1512fc.vehicle',
+      'filename' => 'modCategory/124cf81ca6342def03d6bc436812ca79.vehicle',
       'namespace' => 'ovenpars',
     ),
   ),
