@@ -71,7 +71,7 @@ $xpdo_meta_map['ovenparsItem'] = [
 				[
 					'alias'   => 'parent',
 					'primary' => false,
-					'unique'  => false,
+					'unique'  => true,
 					'type'    => 'BTREE',
 					'columns' =>
 						[

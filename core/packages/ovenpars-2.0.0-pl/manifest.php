@@ -4,20 +4,33 @@
   array (
     'changelog' => 'Changelog for ovenpars.
 
-1.1.0
+2.0.0-pl
 ==============
-- Added import site_catalog
-- Added import image
+- New build script.
+- [#4] Ability to specify the exact repository to install package from.
+- [#6] Renaming script works in any environment.
+- Updated tables resolver.
+- All tables now InnoDB by default.
+- Removed shell renaming script.
 
-1.0.1
+1.0.1-beta
 ==============
-- Added logic
-- Added settings
-- Added save/update on DB
+- PSR-2
+- Requires at least MODX 2.3
+- Disabling "office" resolver will clear its files from built package.
+- Fixed some typos.
 
 1.0.0-beta
 ==============
-- Added packages',
+- Optimized for MODX 2.3
+- Improved processors
+- Disabled plugin and system settings
+- Improved UI
+- Added grid actions
+- Added icons in menu
+- Added search in grid
+- Grid sorting
+- Enable and disable actions',
     'license' => 'GNU GENERAL PUBLIC LICENSE
    Version 2, June 1991
 --------------------------
@@ -308,10 +321,10 @@ END OF TERMS AND CONDITIONS',
     'readme' => '--------------------
 ovenpars
 --------------------
-Author: Digital Agency Dial
+Author: John Doe <john@doe.com>
 --------------------
 
-Парсер сайта http://delopechnoe.ru товаров и добавление в каталог на сайте',
+A basic Extra for MODx Revolution.',
   ),
   'manifest-vehicles' => 
   array (
@@ -320,9 +333,9 @@ Author: Digital Agency Dial
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modNamespace',
-      'guid' => '5ed9c2dd6c04811d4d9df6ada524bceb',
+      'guid' => '2f18abe82d8fb40ab5f221e87b2229bb',
       'native_key' => 'ovenpars',
-      'filename' => 'modNamespace/96b6c4e9c50506ee7293cbb2b5ae85d8.vehicle',
+      'filename' => 'modNamespace/b38dfe68890f4ade39e20b87ab58c65b.vehicle',
       'namespace' => 'ovenpars',
     ),
     1 => 
@@ -330,9 +343,9 @@ Author: Digital Agency Dial
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modMenu',
-      'guid' => '1977d9b36a25da1bd56d419b850892d6',
+      'guid' => '3cdc5bae6f19bc41001ca938f2aa9194',
       'native_key' => 'ovenpars',
-      'filename' => 'modMenu/7df113fed150ea1bb302d9c81504916e.vehicle',
+      'filename' => 'modMenu/c75cf32835221675ff3bd8071322e75f.vehicle',
       'namespace' => 'ovenpars',
     ),
     2 => 
@@ -340,9 +353,9 @@ Author: Digital Agency Dial
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modCategory',
-      'guid' => '3ddf4bbed3d283f34d86d8559b7329b9',
+      'guid' => '93da4ab08693b64ec3c9be6db3343032',
       'native_key' => NULL,
-      'filename' => 'modCategory/a226d71bd2adfe4b0b27dd04a71f8808.vehicle',
+      'filename' => 'modCategory/95f1d955c71354ec7d49cda55d1512fc.vehicle',
       'namespace' => 'ovenpars',
     ),
   ),

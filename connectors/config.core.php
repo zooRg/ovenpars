@@ -4,6 +4,6 @@
  * Add customizations to the $config_options array in `core/config/config.inc.php`.
  *
  */
-define('MODX_CORE_PATH', 'F:/OSPanel/OSPanel/domains/ovenpars/core/');
+define('MODX_CORE_PATH', 'D:/OServer/OSPanel/domains/ovenpars/core/');
 define('MODX_CONFIG_KEY', 'config');
 ?>

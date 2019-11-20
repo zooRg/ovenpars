@@ -7,7 +7,6 @@ $_lang['ovenpars_intro_msg'] = 'Настроить парсер можно в с
 
 $_lang['ovenpars_items'] = 'Товары';
 $_lang['ovenpars_item_id'] = 'Id';
-$_lang['ovenpars_item_parent'] = 'Родительский раздел';
 $_lang['ovenpars_item_name'] = 'Название';
 $_lang['ovenpars_item_description'] = 'Описание';
 $_lang['ovenpars_item_price'] = 'Цена';

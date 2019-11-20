@@ -14,7 +14,6 @@ class ovenparsItemExportProcessor extends modObjectCreateProcessor
 	private $url;
 	private $container;
 	private $item;
-	private $itemOnPageCount;
 	
 	/**
 	 * We doing special check of permission
@@ -37,9 +36,8 @@ class ovenparsItemExportProcessor extends modObjectCreateProcessor
 		$this->container = $this->getProperty('container');
 		$this->item = $this->getProperty('item');
 		$currPage = (int)$this->getProperty('currPage');
-		
 		if (0 < $currPage) {
-			$currPage += 1;
+			$currPage++;
 			$this->url = $this->url . ';' . $currPage;
 		}
 		
@@ -56,8 +54,8 @@ class ovenparsItemExportProcessor extends modObjectCreateProcessor
 			$htmlText = [
 				'page'          => $currPage,
 				'last_page'     => $currPage,
-				'items_current' => ((12 - $this->itemOnPageCount) * $currPage),
-				'items_max'     => ((12 - $this->itemOnPageCount) * $currPage)
+				'items_current' => (12 * $currPage),
+				'items_max'     => (12 * $currPage)
 			];
 		}
 		
@@ -91,11 +89,7 @@ class ovenparsItemExportProcessor extends modObjectCreateProcessor
 		$url = $url['scheme'] . '://' . $url['host'];
 		
 		$html = new Document($data);
-		$parentName = $html->find('[itemtype="https://schema.org/BreadcrumbList"] [itemprop="itemListElement"]:last-child span')[0];
-		if ($parentName) {
-			$parentName = strtolower($parentName->text());
-			$parent = mb_strtoupper(mb_substr($parentName, 0, 1, 'UTF-8'), 'UTF-8') . mb_substr($parentName, 1, null, 'UTF-8');
-		}
+		$page = $html->find($container);
 		
 		$pageList = $html->find('.plist');
 		$pageList = (int)$pageList[0]->find('.pgSwchA')[0]->text();
@@ -104,58 +98,27 @@ class ovenparsItemExportProcessor extends modObjectCreateProcessor
 		$pageLast = $pageLast[0]->find('.pgSwch:last-child')[0];
 		$pageLast = $pageLast ? (int)$pageLast->text() : false;
 		
-		$page = $html->find($container);
-		$arItems = $page[0]->find($items);
 		if (!$pageLast) {
-			$pageLast = $html->find('.plist');
-			$pageLast = $pageLast[0]->find('.pgSwchA:last-child')[0];
-			$pageLast = $pageLast ? (int)$pageLast->text() : false;
-			$this->itemOnPageCount = count($arItems);
+			return false;
 		}
 		
 		$return['LAST'] = $pageLast;
 		$return['CURRENT'] = $pageList;
 		
-		$itemsCount = 0;
+		$arItems = $page[0]->find($items);
 		foreach ($arItems as $aritem) {
 			$name = $aritem->find('.shop-item-title')[0];
+			$img = $aritem->find('.img-block > a > img')[0];
 			$price = $aritem->find('.shop-item-price span')[0];
-			
-			$link = $url . $name->attr('href');
-			$htmlDetail = new Document($link, true);
-			$descPreview = $htmlDetail->find('.shop-brief')[0];
-			$description = $htmlDetail->find('.shop-info')[0];
-			$morePhotoCurr = $htmlDetail->find('section.content .main-img img')[0];
-			$morePhoto = $htmlDetail->find('section.content .img-list div a');
-			
-			$image[0] = $morePhotoCurr ? $url . $morePhotoCurr->attr('data-zoom-image') : '';
-			foreach ($morePhoto as $key => $photo) {
-				if (0 < $key) {
-					$image[$key] = $photo ? $url . $photo->attr('data-zoom-image') : '';
-				}
-			}
-			
-			$descTabs = $htmlDetail->find('#shop-tabs')[0];
-			$propsLink = $descTabs->find('li:nth-child(2) a')[0];
-			$link = $url . $propsLink->attr('href');
-			$htmlDetail = new Document($link, true);
-			$descriptionProps = $htmlDetail->find('.shop-info .shop_spec')[0];
-			
-			$arDesc = [
-				'previewText' => $descPreview ? trim($descPreview->text()) : '',
-				'description' => $description ? trim($description->html()) : '',
-				'props'       => $descriptionProps ? $descriptionProps->html() : '',
-			];
+			$description = $aritem->find('.shop-item-price span')[0];
 			
 			$this->addElement([
-				'parent'      => $parent ? $parent : '',
-				'name'        => $name ? $name->text() : '',
-				'image'       => serialize($image),
-				'price'       => $price ? $price->text() : '',
-				'description' => serialize($arDesc),
-				'active'      => 1,
+				'name'  => $name ? $name->text() : '',
+				'image'   => $img ? $url . $img->attr('src') : '',
+				'price' => $price ? $price->text() : '',
+				'description' => $description ? $description->text() : '',
+				'active' => 1,
 			]);
-			$itemsCount++;
 		}
 		
 		return $return;
@@ -163,16 +126,23 @@ class ovenparsItemExportProcessor extends modObjectCreateProcessor
 	
 	private function addElement($params)
 	{
-		if (!$object = $this->modx->getObject($this->classKey, ['name' => $params['name']])) {
+		if ($arr = $this->modx->getObject($this->classKey, ['name' => $params['name']])) {
+			$arr->set('name', $params['name']);
+			$arr->set('image', $params['image']);
+			$arr->set('price', $params['price']);
+			$arr->set('description', $params['description']);
+			$arr->set('active', $params['active']);
+			$arr->save();
+		} else {
+			/** @var ovenparsItem $object */
 			$object = $this->modx->newObject($this->classKey);
+			$object->set('name', $params['name']);
+			$object->set('image', $params['image']);
+			$object->set('price', $params['price']);
+			$object->set('description', $params['description']);
+			$object->set('active', $params['active']);
+			$object->save();
 		}
-		$object->set('parent', $params['parent']);
-		$object->set('name', $params['name']);
-		$object->set('image', $params['image']);
-		$object->set('price', $params['price']);
-		$object->set('description', $params['description']);
-		$object->set('active', $params['active']);
-		$object->save();
 	}
 }
 

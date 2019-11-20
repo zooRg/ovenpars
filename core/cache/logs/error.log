@@ -4,3 +4,163 @@
 [2019-11-20 17:12:35] (ERROR @ F:\OSPanel\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 762) modSession::load() is not a valid static method.
 [2019-11-20 17:12:35] (ERROR @ F:\OSPanel\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 596) PHP warning: strtolower() expects exactly 1 parameter, 2 given
 [2019-11-20 17:12:35] (ERROR @ F:\OSPanel\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 601) PHP warning: strtolower() expects exactly 1 parameter, 2 given
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class: pdoParser from pdoparser.
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1247) Problem getting service parser, instance of class pdoParser, from path F:/OSPanel/OSPanel/domains/ovenpars/core/components/pdotools/model/pdotools/
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 612) PHP warning: mb_substr() expects parameter 3 to be integer, string given
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class: ysql.xPDOQuery from .YSQL.XPDOQUERY.
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\om\xpdoobject.class.php : 447) No valid statement could be found in or generated from the given criteria.
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 598) PHP warning: substr() expects parameter 3 to be integer, string given
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class:  from mysql..
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 598) PHP warning: substr() expects parameter 3 to be integer, string given
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class:  from mysql..
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1289) Could not get table name for class: 
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 598) PHP warning: substr() expects parameter 3 to be integer, string given
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class:  from mysql..
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 598) PHP warning: substr() expects parameter 3 to be integer, string given
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class:  from mysql..
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 598) PHP warning: substr() expects parameter 3 to be integer, string given
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class:  from mysql..
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 598) PHP warning: substr() expects parameter 3 to be integer, string given
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class:  from mysql..
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 598) PHP warning: substr() expects parameter 3 to be integer, string given
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class:  from mysql..
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 598) PHP warning: substr() expects parameter 3 to be integer, string given
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class:  from mysql..
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 612) PHP warning: mb_substr() expects parameter 3 to be integer, string given
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class: alidation.xPDOValidator from .ALIDATION.XPDOVALIDATOR.
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 612) PHP warning: mb_substr() expects parameter 3 to be integer, string given
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class: alidation.modValidator from .ALIDATION.MODVALIDATOR.
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 598) PHP warning: substr() expects parameter 3 to be integer, string given
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class:  from mysql..
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1617) Could not load class modSession_mysql
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 598) PHP warning: substr() expects parameter 3 to be integer, string given
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class:  from mysql..
+[2019-11-20 20:06:43] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1617) Could not load class modSession_mysql
+[2019-11-20 20:06:47] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class: pdoParser from pdoparser.
+[2019-11-20 20:06:47] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1247) Problem getting service parser, instance of class pdoParser, from path F:/OSPanel/OSPanel/domains/ovenpars/core/components/pdotools/model/pdotools/
+[2019-11-20 20:06:47] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 612) PHP warning: mb_substr() expects parameter 3 to be integer, string given
+[2019-11-20 20:06:47] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\cache\xpdocachemanager.class.php : 222) PHP warning: strrpos() expects at least 2 parameters, 1 given
+[2019-11-20 20:06:47] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class: ysql.xPDOQuery from .ysql.xpdoquery.
+[2019-11-20 20:06:47] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\cache\xpdocachemanager.class.php : 222) PHP warning: strrpos() expects at least 2 parameters, 1 given
+[2019-11-20 20:06:47] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\om\xpdoobject.class.php : 447) No valid statement could be found in or generated from the given criteria.
+[2019-11-20 20:06:51] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class: pdoParser from pdoparser.
+[2019-11-20 20:06:51] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1247) Problem getting service parser, instance of class pdoParser, from path F:/OSPanel/OSPanel/domains/ovenpars/core/components/pdotools/model/pdotools/
+[2019-11-20 20:07:13] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class: pdoParser from pdoparser.
+[2019-11-20 20:07:13] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1247) Problem getting service parser, instance of class pdoParser, from path F:/OSPanel/OSPanel/domains/ovenpars/core/components/pdotools/model/pdotools/
+[2019-11-20 20:07:13] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 596) PHP warning: strtoupper() expects exactly 1 parameter, 2 given
+[2019-11-20 20:07:13] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 601) PHP warning: strtoupper() expects exactly 1 parameter, 2 given
+[2019-11-20 20:07:17] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class: pdoParser from pdoparser.
+[2019-11-20 20:07:17] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1247) Problem getting service parser, instance of class pdoParser, from path F:/OSPanel/OSPanel/domains/ovenpars/core/components/pdotools/model/pdotools/
+[2019-11-20 20:08:59] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class: pdoParser from pdoparser.
+[2019-11-20 20:08:59] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1247) Problem getting service parser, instance of class pdoParser, from path F:/OSPanel/OSPanel/domains/ovenpars/core/components/pdotools/model/pdotools/
+[2019-11-20 20:18:35] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class: pdoParser from pdoparser.
+[2019-11-20 20:18:35] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1247) Problem getting service parser, instance of class pdoParser, from path F:/OSPanel/OSPanel/domains/ovenpars/core/components/pdotools/model/pdotools/
+[2019-11-20 20:18:35] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 607) PHP warning: substr_count() expects at least 2 parameters, 1 given
+[2019-11-20 20:18:35] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 607) PHP warning: substr_count() expects at least 2 parameters, 1 given
+[2019-11-20 20:18:35] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 612) PHP warning: substr_count() expects at least 2 parameters, 1 given
+[2019-11-20 20:18:35] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 607) PHP warning: substr_count() expects at least 2 parameters, 1 given
+[2019-11-20 20:18:35] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 607) PHP warning: substr_count() expects at least 2 parameters, 1 given
+[2019-11-20 20:18:35] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 607) PHP warning: substr_count() expects at least 2 parameters, 1 given
+[2019-11-20 20:18:35] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 607) PHP warning: substr_count() expects at least 2 parameters, 1 given
+[2019-11-20 20:18:35] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 607) PHP warning: substr_count() expects at least 2 parameters, 1 given
+[2019-11-20 20:18:35] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 607) PHP warning: substr_count() expects at least 2 parameters, 1 given
+[2019-11-20 20:18:39] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class: pdoParser from pdoparser.
+[2019-11-20 20:18:39] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1247) Problem getting service parser, instance of class pdoParser, from path F:/OSPanel/OSPanel/domains/ovenpars/core/components/pdotools/model/pdotools/
+[2019-11-20 20:18:39] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 612) PHP warning: mb_substr() expects parameter 3 to be integer, string given
+[2019-11-20 20:18:39] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class: ysql.xPDOQuery from .ysql.xpdoquery.
+[2019-11-20 20:18:39] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\om\xpdoobject.class.php : 447) No valid statement could be found in or generated from the given criteria.
+[2019-11-20 20:18:44] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class: pdoParser from pdoparser.
+[2019-11-20 20:18:44] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1247) Problem getting service parser, instance of class pdoParser, from path F:/OSPanel/OSPanel/domains/ovenpars/core/components/pdotools/model/pdotools/
+[2019-11-20 20:18:44] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class:  from .mysql..
+[2019-11-20 20:18:44] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 762) modSession::load() is not a valid static method.
+[2019-11-20 20:18:44] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class:  from .mysql..
+[2019-11-20 20:23:26] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class: pdoParser from pdoparser.
+[2019-11-20 20:23:26] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1247) Problem getting service parser, instance of class pdoParser, from path F:/OSPanel/OSPanel/domains/ovenpars/core/components/pdotools/model/pdotools/
+[2019-11-20 20:29:35] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 20:29:35] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 20:29:35] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 20:29:35] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:08:43] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:08:43] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:08:43] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:08:43] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:09:24] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:09:24] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:09:24] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:09:24] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:10:26] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\modcachemanager.class.php : 349) Error caching lexicon topic lexicon/ru/core/workspace
+[2019-11-20 21:14:59] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:14:59] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:14:59] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:14:59] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:15:57] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:15:57] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:15:57] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:15:57] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:25:47] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:25:47] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:25:47] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:25:47] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:25:53] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:25:53] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:25:53] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:25:53] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:28:11] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:28:11] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:28:11] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:28:11] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:28:48] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:28:48] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:28:48] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:28:48] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:31:43] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:31:43] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:31:43] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:31:43] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:32:21] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:32:21] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:32:21] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:32:21] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:32:37] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 596) PHP warning: strtolower() expects exactly 1 parameter, 2 given
+[2019-11-20 21:32:37] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 601) PHP warning: strtolower() expects exactly 1 parameter, 2 given
+[2019-11-20 21:32:37] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class:  from .mysql..
+[2019-11-20 21:32:37] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 762) modSession::load() is not a valid static method.
+[2019-11-20 21:32:37] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 596) PHP warning: strtolower() expects exactly 1 parameter, 2 given
+[2019-11-20 21:32:37] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 601) PHP warning: strtolower() expects exactly 1 parameter, 2 given
+[2019-11-20 21:32:37] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 644) Could not load class:  from .mysql..
+[2019-11-20 21:39:19] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\om\xpdoobject.class.php : 240) Error 42S22 executing statement: 
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'ovenparsItem.parent' in 'field list'
+)
+
+[2019-11-20 21:39:44] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:39:44] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:39:44] (ERROR in xPDO::getService @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\xpdo.class.php : 1234) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:39:44] (ERROR in modRestCurlClient::__construct @ D:\OServer\OSPanel\domains\ovenpars\core\model\modx\rest\modrestcurlclient.class.php : 26) modRestClient::__construct is deprecated since version 2.3.0. Use the modRest classes instead.
+[2019-11-20 21:39:48] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\om\xpdoobject.class.php : 240) Error 42S22 executing statement: 
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'ovenparsItem.parent' in 'field list'
+)
+
+[2019-11-20 21:39:53] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\om\xpdoobject.class.php : 240) Error 42S22 executing statement: 
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'ovenparsItem.parent' in 'field list'
+)
+
+[2019-11-20 21:40:00] (ERROR @ D:\OServer\OSPanel\domains\ovenpars\core\xpdo\om\xpdoobject.class.php : 240) Error 42S22 executing statement: 
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'ovenparsItem.parent' in 'field list'
+)
+

@@ -55,61 +55,37 @@ Ext.extend(ovenpars.grid.Items, MODx.grid.Grid, {
         this.addContextMenuItem(menu);
     },
 
-    createImport: function (request) {
-        var _self = this,
-            status = Ext.getCmp('currentStatus'),
-            items_current = request.items_current || 1,
-            countItems = request.countItems || 2,
-            div = '<i class="icon icon-spinner"></i>';
-    
-        status.update(div + 'Поиск товаров');
-    
-        if (items_current >= countItems) {
-            status.update('Завершено ' + request.items_current + ' из ' + request.countItems);
-            return false;
-        }
-        MODx.Ajax.request({
-            url: this.config.url,
-            params: {
-                action: 'mgr/import/import',
-                parent: ovenpars.config.setting_section_id,
-                template: ovenpars.config.setting_template_id,
-                price: ovenpars.config.setting_price_tv,
-                description: ovenpars.config.setting_desc_tv,
-                image: ovenpars.config.setting_image_tv,
-                items_current: request.items_current
-            },
+    createImport: function (btn, e) {
+        var option = {
+            parent: ovenpars.config.setting_section_id,
+            template: ovenpars.config.setting_template_id,
+            price: ovenpars.config.setting_price_tv,
+            description: ovenpars.config.setting_desc_tv
+        };
+        var w = MODx.load({
+            xtype: 'ovenpars-item-window-createImport',
+            id: Ext.id(),
             listeners: {
                 success: {
-                    fn: function (data) {
-                        if (data.success) {
-                            var html = data.results;
-                            status.update(div + 'Обработано ' + html.items_current);
-                        
-                            this.refresh();
-                            setTimeout(function () {
-                                _self.createImport(html);
-                                console.log(html);
-                            }, 2000);
-                        }
+                    fn: function () {
+                        this.refresh();
                     }, scope: this
                 }
             }
         });
+        w.reset();
+        w.setValues(option);
+        w.show(e.target);
     },
     
     createExport: function (request) {
         var _self = this,
             status = Ext.getCmp('currentStatus'),
             page = request.page || 1,
-            last_page = request.last_page || 2,
-            div = '<i class="icon icon-spinner"></i>';
-        
-        status.update(div + 'Поиск товаров');
+            last_page = request.last_page || 2;
         
         if (page === last_page) {
-            status.update('Завершено ' + request.items_current + ' из ' + request.items_max);
-            this.refresh();
+            status.update('Обработано ' + request.items_current + ' из ' + request.items_max);
             return false;
         }
         MODx.Ajax.request({
@@ -126,21 +102,15 @@ Ext.extend(ovenpars.grid.Items, MODx.grid.Grid, {
                     fn: function (data) {
                         if (data.success) {
                             var html = data.results.html;
-                            status.update(div + 'Обработано ' + html.items_current + ' из ' + html.items_max);
+                            status.update('Обработано ' + html.items_current + ' из ' + html.items_max);
                     
                             this.refresh();
-                            setTimeout(function () {
+                            /*setTimeout(function () {
                                 _self.createExport(html);
                                 console.log(html);
-                            }, 2000);
+                            }, 2000)*/
                         }
                     }, scope: this
-                },
-                failure: {
-                    fn: function (data) {
-                        console.log(data);
-                        status.update('Завершено с ошибкой, повторите еще раз');
-                    }
                 }
             }
         });
@@ -256,7 +226,7 @@ Ext.extend(ovenpars.grid.Items, MODx.grid.Grid, {
     },
 
     getFields: function () {
-        return ['id', 'parent', 'name', 'image', 'price', 'description', 'active', 'actions'];
+        return ['id', 'name', 'image', 'price', 'description', 'active', 'actions'];
     },
 
     getColumns: function () {
@@ -266,42 +236,37 @@ Ext.extend(ovenpars.grid.Items, MODx.grid.Grid, {
             sortable: true,
             width: 50
         }, {
-            header: _('ovenpars_item_parent'),
-            dataIndex: 'parent',
-            sortable: true,
-            width: 100
-        }, {
             header: _('ovenpars_item_name'),
             dataIndex: 'name',
             sortable: true,
-            width: 100,
+            width: 70,
         }, {
             header: _('ovenpars_item_image'),
             dataIndex: 'image',
             sortable: false,
             width: 100,
         }, {
-            header: _('ovenpars_item_description'),
-            dataIndex: 'description',
-            sortable: false,
-            width: 200,
-        }, {
             header: _('ovenpars_item_price'),
             dataIndex: 'price',
             sortable: true,
-            width: 70,
+            width: 50,
+        }, {
+            header: _('ovenpars_item_description'),
+            dataIndex: 'description',
+            sortable: false,
+            width: 150,
         }, {
             header: _('ovenpars_item_active'),
             dataIndex: 'active',
             renderer: ovenpars.utils.renderBoolean,
             sortable: true,
-            width: 50,
+            width: 70,
         }, {
             header: _('ovenpars_grid_actions'),
             dataIndex: 'actions',
             renderer: ovenpars.utils.renderActions,
             sortable: false,
-            width: 100,
+            width: 70,
             id: 'actions'
         }];
     },

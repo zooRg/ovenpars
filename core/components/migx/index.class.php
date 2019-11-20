@@ -1,6 +1,6 @@
 <?php
 require_once dirname(__FILE__) . '/model/migx/migx.class.php';
-abstract class MigxManagerController extends modExtraManagerController {
+abstract class MigxManagerController extends ovenparsManagerController {
     /** @var MIGX $migx */
     public $migx;
     public function initialize() {

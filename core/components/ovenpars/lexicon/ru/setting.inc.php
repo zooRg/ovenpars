@@ -14,4 +14,3 @@ $_lang['setting_section_id'] = 'ID раздела';
 $_lang['setting_template_id'] = 'ID шаблона';
 $_lang['setting_price_tv'] = 'Поле с ценой';
 $_lang['setting_desc_tv'] = 'Поле с описанием';
-$_lang['setting_image_tv'] = 'Поле с картинками';

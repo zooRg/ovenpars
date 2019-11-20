@@ -15,35 +15,35 @@ $config_options = array (
 $driver_options = array (
 );
 
-$lastInstallTime = 1574058330;
+$lastInstallTime = 1574270750;
 
-$site_id = 'modx5dd2395a369bc9.09368244';
-$site_sessionname = 'SN5dd2383876b8a';
+$site_id = 'modx5dd5771e91fc23.77454121';
+$site_sessionname = 'SN5dd5769420a4f';
 $https_port = '443';
-$uuid = '45016686-7498-42a7-8d9b-3f70335c590a';
+$uuid = 'b39de014-68e3-4d97-892e-c371e7dbabcf';
 
 if (!defined('MODX_CORE_PATH')) {
-    $modx_core_path= 'F:/OSPanel/OSPanel/domains/ovenpars/core/';
+    $modx_core_path= 'D:/OServer/OSPanel/domains/ovenpars/core/';
     define('MODX_CORE_PATH', $modx_core_path);
 }
 if (!defined('MODX_PROCESSORS_PATH')) {
-    $modx_processors_path= 'F:/OSPanel/OSPanel/domains/ovenpars/core/model/modx/processors/';
+    $modx_processors_path= 'D:/OServer/OSPanel/domains/ovenpars/core/model/modx/processors/';
     define('MODX_PROCESSORS_PATH', $modx_processors_path);
 }
 if (!defined('MODX_CONNECTORS_PATH')) {
-    $modx_connectors_path= 'F:/OSPanel/OSPanel/domains/ovenpars/connectors/';
+    $modx_connectors_path= 'D:/OServer/OSPanel/domains/ovenpars/connectors/';
     $modx_connectors_url= '/connectors/';
     define('MODX_CONNECTORS_PATH', $modx_connectors_path);
     define('MODX_CONNECTORS_URL', $modx_connectors_url);
 }
 if (!defined('MODX_MANAGER_PATH')) {
-    $modx_manager_path= 'F:/OSPanel/OSPanel/domains/ovenpars/manager/';
+    $modx_manager_path= 'D:/OServer/OSPanel/domains/ovenpars/manager/';
     $modx_manager_url= '/manager/';
     define('MODX_MANAGER_PATH', $modx_manager_path);
     define('MODX_MANAGER_URL', $modx_manager_url);
 }
 if (!defined('MODX_BASE_PATH')) {
-    $modx_base_path= 'F:/OSPanel/OSPanel/domains/ovenpars/';
+    $modx_base_path= 'D:/OServer/OSPanel/domains/ovenpars/';
     $modx_base_url= '/';
     define('MODX_BASE_PATH', $modx_base_path);
     define('MODX_BASE_URL', $modx_base_url);
@@ -75,7 +75,7 @@ if (!defined('MODX_SITE_URL')) {
     define('MODX_SITE_URL', $site_url);
 }
 if (!defined('MODX_ASSETS_PATH')) {
-    $modx_assets_path= 'F:/OSPanel/OSPanel/domains/ovenpars/assets/';
+    $modx_assets_path= 'D:/OServer/OSPanel/domains/ovenpars/assets/';
     $modx_assets_url= '/assets/';
     define('MODX_ASSETS_PATH', $modx_assets_path);
     define('MODX_ASSETS_URL', $modx_assets_url);

@@ -188,7 +188,7 @@ class modManagerResponse extends modResponse {
     public function instantiateController($className,$getInstanceMethod = 'getInstance') {
         try {
             $c = new $className($this->modx,$this->action);
-            if (!($c instanceof modExtraManagerController) && $getInstanceMethod == 'getInstanceDeprecated') {
+            if (!($c instanceof ovenparsManagerController) && $getInstanceMethod == 'getInstanceDeprecated') {
                 $getInstanceMethod = 'getInstance';
             }
             /* this line allows controller derivatives to decide what instance they want to return (say, for derivative class_key types) */

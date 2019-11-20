@@ -1,0 +1,42 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+  ),
+  'namespace' => 'ovenpars',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"ovenpars-2.0.0-pl\\/modCategory\\/95f1d955c71354ec7d49cda55d1512fc\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"ovenpars"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"ovenpars-2.0.0-pl\\/modCategory\\/95f1d955c71354ec7d49cda55d1512fc\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"ovenpars"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"ovenpars-2.0.0-pl\\/modCategory\\/95f1d955c71354ec7d49cda55d1512fc.symlinks.resolver","type":"php","name":"symlinks"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"ovenpars-2.0.0-pl\\/modCategory\\/95f1d955c71354ec7d49cda55d1512fc.tables.resolver","type":"php","name":"tables"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '93da4ab08693b64ec3c9be6db3343032',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '95f1d955c71354ec7d49cda55d1512fc',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"ovenpars","rank":0}',
+);
