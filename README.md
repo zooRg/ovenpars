@@ -1,3 +1,5 @@
+Парсер для modxRevo
+
 ## Quick start
 
 * Install MODX Revolution
